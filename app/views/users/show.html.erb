@@ -1,0 +1,11 @@
+<div class="wrapper">
+  <section"row g-2">
+    <% if @air_quality_index > @user.air_quality_threshold  %>
+      <h2>The air quality in your area is above the threshold you set. Stay indoors or be careful out there!</h2>
+    <% end %>
+    <h2>The current air quality where you are in <%= @user.city %> is <%= @air_quality_index %></h2>
+    <h2>The threshold you set is <%= @user.air_quality_threshold %></h2>
+  </section>
+
+  <%= render "users/info" %>
+</div>

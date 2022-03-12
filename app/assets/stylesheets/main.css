@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.slide {
+  width: 80%;
+}
+
+#table-warning-danger {
+  background-color: #f6bc5f;
+  border-color: #f6bc5f;
+}
+
+
